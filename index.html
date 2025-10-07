@@ -15,85 +15,50 @@
         <header class="header">
             <div class="logo">
                 <div class="logo-icon">🚛</div>
-                <h1>TransportMan</h1>
+                <h1>Transport App</h1>
             </div>
-            <p class="tagline">Your transportation management solution</p>
+            <p class="tagline">Din transportløsning</p>
         </header>
 
         <main class="main">
             <div class="download-section">
-                <h2>Download TransportMan</h2>
-                <p class="description">
-                    Streamline your transportation operations with our powerful mobile app. 
-                    Manage your fleet, track routes, and analyze performance all in one place.
-                </p>
-                
-                <div class="features">
-                    <div class="feature">
-                        <span class="feature-icon">📱</span>
-                        <span>Mobile-first design</span>
-                    </div>
-                    <div class="feature">
-                        <span class="feature-icon">⚡</span>
-                        <span>Real-time tracking</span>
-                    </div>
-                    <div class="feature">
-                        <span class="feature-icon">🔒</span>
-                        <span>Secure & reliable</span>
-                    </div>
-                </div>
+                <h2>Last ned Transport App</h2>
 
                 <div class="download-buttons">
                     <a href="https://github.com/Prime-Cargo/TransportTablerDist/releases/latest/download/TransportMan.apk" class="download-btn primary" download="TransportMan.apk">
                         <span class="btn-icon">📱</span>
                         <span class="btn-text">
-                            <span class="btn-title">Download APK</span>
-                            <span class="btn-subtitle">For Android devices</span>
+                            <span class="btn-title">Last ned APK</span>
+                            <span class="btn-subtitle">For Android-enheter</span>
                         </span>
                     </a>
                 </div>
 
                 <div class="install-instructions">
-                    <h3>Installation Instructions</h3>
+                    <h3>Installasjonsinstruksjoner</h3>
                     
-                    <div class="language-tabs">
-                        <button class="tab-btn" onclick="showTab('english')">English</button>
-                        <button class="tab-btn active" onclick="showTab('norwegian')">Norsk</button>
-                    </div>
+                    <h4>1. Tillat installasjon</h4>
+                    <ul>
+                        <li><strong>Android 8+:</strong> Åpne APK → Trykk Innstillinger → "Tillat fra denne kilden" for appen du åpnet fra (f.eks. Chrome/Files).</li>
+                        <li><strong>Android 7-:</strong> Innstillinger → Sikkerhet → Aktiver "Ukjente kilder".</li>
+                    </ul>
                     
-                    <div id="english-instructions" class="tab-content">
-                        <ol>
-                            <li>Download the APK file above</li>
-                            <li>Enable "Install from unknown sources" in your Android settings</li>
-                            <li>Open the downloaded APK file</li>
-                            <li>Follow the installation prompts</li>
-                        </ol>
-                    </div>
+                    <h4>2. Installer</h4>
+                    <ul>
+                        <li>Finn TransportMan.apk i Nedlastinger/Files.</li>
+                        <li>Trykk Installer → Åpne.</li>
+                    </ul>
                     
-                    <div id="norwegian-instructions" class="tab-content active">
-                        <h4>1. Tillat installasjon</h4>
-                        <ul>
-                            <li><strong>Android 8+:</strong> Åpne APK → Trykk Innstillinger → "Tillat fra denne kilden" for appen du åpnet fra (f.eks. Chrome/Files).</li>
-                            <li><strong>Android 7-:</strong> Innstillinger → Sikkerhet → Aktiver "Ukjente kilder".</li>
-                        </ul>
-                        
-                        <h4>2. Installer</h4>
-                        <ul>
-                            <li>Finn TransportMan.apk i Nedlastinger/Files.</li>
-                            <li>Trykk Installer → Åpne.</li>
-                        </ul>
-                        
-                        <h4>3. Første oppstart</h4>
-                        <ul>
-                            <li>Godkjenn nødvendige tillatelser hvis forespurt.</li>
-                        </ul>
-                    </div>
+                    <h4>3. Første oppstart</h4>
+                    <ul>
+                        <li>Godkjenn nødvendige tillatelser hvis forespurt.</li>
+                    </ul>
                 </div>
             </div>
         </main>
 
         <footer class="footer">
-            <p>&copy; 2024 TransportMan. All rights reserved.</p>
+            <p>&copy; 2024 TransportMan. Alle rettigheter forbeholdt.</p>
         </footer>
     </div>
 
@@ -120,25 +85,6 @@
                 });
             });
         });
-
-        // Tab switching function
-        function showTab(language) {
-            // Hide all tab contents
-            document.querySelectorAll('.tab-content').forEach(content => {
-                content.classList.remove('active');
-            });
-            
-            // Remove active class from all buttons
-            document.querySelectorAll('.tab-btn').forEach(btn => {
-                btn.classList.remove('active');
-            });
-            
-            // Show selected tab content
-            document.getElementById(language + '-instructions').classList.add('active');
-            
-            // Add active class to clicked button
-            event.target.classList.add('active');
-        }
     </script>
 </body>
 </html>
