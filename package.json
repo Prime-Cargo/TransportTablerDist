@@ -1,0 +1,23 @@
+{
+  "name": "transportman-app-distribution",
+  "version": "1.0.0",
+  "description": "Landing page for TransportMan app distribution",
+  "main": "index.html",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo 'Static site - no build needed'",
+    "deploy": "vercel --prod"
+  },
+  "keywords": [
+    "transportman",
+    "app",
+    "distribution",
+    "mobile",
+    "android"
+  ],
+  "author": "TransportMan Team",
+  "license": "MIT",
+  "devDependencies": {
+    "vercel": "^32.0.0"
+  }
+}
