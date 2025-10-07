@@ -1,5 +1,5 @@
-# APK files (too large for GitHub) - commented out to include optimized APK
-# *.apk
+# APK files (too large for GitHub)
+*.apk
 
 # OS generated files
 .DS_Store
