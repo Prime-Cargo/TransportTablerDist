@@ -270,7 +270,46 @@ body {
     text-align: center;
 }
 
-.install-instructions ol {
+/* Language tabs */
+.language-tabs {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+    justify-content: center;
+}
+
+.tab-btn {
+    background: #e9ecef;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-weight: 500;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.tab-btn.active {
+    background: #007AFF;
+    color: white;
+}
+
+.tab-btn:hover:not(.active) {
+    background: #dee2e6;
+    color: #333;
+}
+
+/* Tab content */
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.install-instructions ol,
+.install-instructions ul {
     padding-left: 1.5rem;
 }
 
@@ -278,6 +317,17 @@ body {
     margin-bottom: 0.75rem;
     color: #555;
     line-height: 1.6;
+}
+
+.install-instructions h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+    margin: 1.5rem 0 0.75rem 0;
+}
+
+.install-instructions h4:first-child {
+    margin-top: 0;
 }
 
 /* Footer */

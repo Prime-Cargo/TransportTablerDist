@@ -88,12 +88,39 @@
 
                 <div class="install-instructions">
                     <h3>Installation Instructions</h3>
-                    <ol>
-                        <li>Download the APK file above</li>
-                        <li>Enable "Install from unknown sources" in your Android settings</li>
-                        <li>Open the downloaded APK file</li>
-                        <li>Follow the installation prompts</li>
-                    </ol>
+                    
+                    <div class="language-tabs">
+                        <button class="tab-btn" onclick="showTab('english')">English</button>
+                        <button class="tab-btn active" onclick="showTab('norwegian')">Norsk</button>
+                    </div>
+                    
+                    <div id="english-instructions" class="tab-content">
+                        <ol>
+                            <li>Download the APK file above</li>
+                            <li>Enable "Install from unknown sources" in your Android settings</li>
+                            <li>Open the downloaded APK file</li>
+                            <li>Follow the installation prompts</li>
+                        </ol>
+                    </div>
+                    
+                    <div id="norwegian-instructions" class="tab-content active">
+                        <h4>1. Tillat installasjon</h4>
+                        <ul>
+                            <li><strong>Android 8+:</strong> Åpne APK → Trykk Innstillinger → "Tillat fra denne kilden" for appen du åpnet fra (f.eks. Chrome/Files).</li>
+                            <li><strong>Android 7-:</strong> Innstillinger → Sikkerhet → Aktiver "Ukjente kilder".</li>
+                        </ul>
+                        
+                        <h4>2. Installer</h4>
+                        <ul>
+                            <li>Finn TransportMan.apk i Nedlastinger/Files.</li>
+                            <li>Trykk Installer → Åpne.</li>
+                        </ul>
+                        
+                        <h4>3. Første oppstart</h4>
+                        <ul>
+                            <li>Godkjenn nødvendige tillatelser hvis forespurt.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </main>
@@ -126,6 +153,25 @@
                 });
             });
         });
+
+        // Tab switching function
+        function showTab(language) {
+            // Hide all tab contents
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // Remove active class from all buttons
+            document.querySelectorAll('.tab-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            // Show selected tab content
+            document.getElementById(language + '-instructions').classList.add('active');
+            
+            // Add active class to clicked button
+            event.target.classList.add('active');
+        }
     </script>
 </body>
 </html>
