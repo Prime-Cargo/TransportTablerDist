@@ -35,11 +35,18 @@ body {
 }
 
 .logo-icon {
-    font-size: 3rem;
     background: #f4f4f4;
     border-radius: 12px;
     padding: 1rem;
     border: 1px solid #e5e5e5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-icon .material-icons {
+    font-size: 2.5rem;
+    color: #333;
 }
 
 .logo h1 {
@@ -115,7 +122,14 @@ body {
 }
 
 .btn-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-icon .material-icons {
     font-size: 1.5rem;
+    color: white;
 }
 
 .btn-text {
