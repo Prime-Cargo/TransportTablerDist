@@ -191,6 +191,32 @@ body {
     margin-top: 0;
 }
 
+/* Play Store Tester */
+.playstore-tester {
+    background: #f9f9f9;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.playstore-tester p {
+    margin: 0;
+    color: #666;
+    font-size: 1rem;
+}
+
+.playstore-tester a {
+    color: #007AFF;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.playstore-tester a:hover {
+    text-decoration: underline;
+}
+
 /* Footer */
 .footer {
     text-align: center;
